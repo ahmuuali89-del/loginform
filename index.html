@@ -1,22 +1,154 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="so">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Global Science University</title>
+ <link rel="stylesheet" href="gsu.css">
 </head>
 <body>
-    <div class="container">
-        <img src="data:image/jpeg;base64,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" alt="">
-        <h2>global university</h2>
-        <form action=""></form>
-        <input type="text" placeholder="enter username" required>
-        <input type="text" placeholder="enter password" required>
-        <button class="btn">login</button> 
-        <a href="#" class="link">create new acount</a>
-        <a href="#" class="link">forget password</a>
+  <header>
+    <div class="container top">
+      <div class="brand">
+        <div class="logo">
+          <img src="https://gsu.edu.so/wp-content/uploads/2019/10/cropped-New-website-logo-300x300.png" alt="">
+        </div>
+        <div>
+          <div style="font-weight:800">Global Science University</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.9)">Aqoon, Hal-abuurnimo, Mustaqbal</div>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <ul>;
+          <li><a href="#about">Ku saabsan</a></li>
+          <li><a href="#programs">Barnaamijyo</a></li>
+          <li><a href="#admissions">Gelitaanka</a></li>
+          <li><a href="#contact">Nala soo xiriir</a></li>
+        </ul>
+      </nav>
     </div>
-    
+    <div class="container hero">
+      <div>
+        <div class="card" style="max-width:680px">
+          <h1>Ku soo dhawoow Global Science University</h1>
+          <p class="muted">Jaamacad diiradda saarta cilmiga, tiknoolajiyada iyo cilmi-baarista — barnaamijyo la isku halayn karo oo loogu talagalay hoggaamiyeyaasha berrito.</p>
+          <a class="cta" href="#admissions">Codso Hadda</a>
+        </div>
+      </div>
+      <div class="card center">
+        <div style="text-align:center">
+          <div class="pill">Diiwaan 2026</div>
+          <h2 style="margin:14px 0 6px">1000+ Arday</h2>
+          
+          <p class="muted">Kulliyadaha: Saynis, Injineernimo, Xisaab & ICT</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- About -->
+    <section id="about" class="about">
+      <div>
+        <h2>Ku saabsan Global Science University</h2>
+        <p class="muted">Global Science University waxay bixisaa barnaamijyo heer jaamacadeed oo xirfad-ururinaya, oo ay ka mid yihiin Bachelor, Master iyo shahaadooyin cilmi-baaris. Xarunta jaamacadda waxay taageertaa cilmi-baaris casri ah, isku-xirnaanta warshadaha, iyo barnaamijyada is-weydaarsiga caalamiga ah.</p>
+        <ul>
+          <li>Fakulteeto tayo sare leh</li>
+          <li>Fursado cilmi-baaris iyo internship</li>
+          <li>Xarumaha casriga ah iyo maktabado</li>
+        </ul>
+      </div>
+     <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzTji2fB-KChjo5mpoZKhxq5UAqMZvQfW8iB9VK3LgUtU-ND0ci7e8WFb6Q1R04U19xI_weKbI2seUdJZCeDpTUdMvgmis8HbFdInbzemJiXB52ItxS8ALm4qxRuraMCgJ6ag2u=s1360-w1360-h1020-rw" alt="">
+    </section>
+
+    <!-- Programs -->
+    <section id="programs" style="margin-top:28px">
+      <h2>Barnaamijyadeena</h2>
+      <div class="grid" style="margin-top:12px">
+        <article class="program">
+          <h3>Bachelor - Sayniska Kombiyuutarka</h3>
+          <p class="muted">Barnaamijkan wuxuu ku siinayaa aasaaska barnaamijyada, xogta, iyo sirdoonka macmalka ah.</p>
+          <p style="margin:12px 0 0;font-weight:700">Muddo: 4 sano</p>
+        </article>
+        <article class="program">
+          <h3>Bachelor - Injineernimada Korantada</h3>
+          <p class="muted">Diiradda saaraya nidaamyada korantada, isgaarsiinta, iyo tamarta la cusboonaysiin karo.</p>
+          <p style="margin:12px 0 0;font-weight:700">Muddo: 4 sano</p>
+        </article>
+        <article class="program">
+          <h3>Master - Cilmi-baaris Saynis</h3>
+          <p class="muted">Barnaamijka cilmi-baarista ee la xidhiidha xallinta dhibaatooyinka la taaban karo.</p>
+          <p style="margin:12px 0 0;font-weight:700">Muddo: 2 sano</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Admissions -->
+    <section id="admissions" style="margin-top:28px">
+      <h2>Gelitaanka & Shuruudaha</h2>
+      <div class="admit" style="display:grid;grid-template-columns:1fr 320px;gap:18px">
+        <div>
+          <h3>Shuruudaha Guud</h3>
+          <ul class="muted">
+            <li>Shahaado dugsi sare oo la aqoonsan yahay</li>
+            <li>Natiijooyinka imtixaanka/warqadda qalin-jabinta</li>
+            <li>Dukumiintiyada aqoonsiga iyo CV</li>
+          </ul>
+          <p class="muted">Foomamka iyo jadwalka imtixaanka waxaa laga heli karaa xafiiska gelitaanka ama online.</p>
+        </div>
+        <div style="align-self:center">
+          <form onsubmit="event.preventDefault();alert('Waad mahadsantahay — codsigaaga waa la diiwaan geliyey (tijaabo)')">
+            <div style="margin-bottom:8px"><input required placeholder="Magacaaga" style="width:100%;padding:10px;border-radius:8px;border:1px solid #d1d5db"></div>
+            <div style="margin-bottom:8px"><input required placeholder="Iimaylka" type="email" style="width:100%;padding:10px;border-radius:8px;border:1px solid #d1d5db"></div>
+            <div style="margin-bottom:8px"><select required style="width:100%;padding:10px;border-radius:8px;border:1px solid #d1d5db"><option value="">Dooro Barnaamij</option><option>Sayniska Kombiyuutarka</option><option>Injineernimo</option><option>Master Cilmi-baaris</option></select></div>
+            <div style="text-align:right"><button style="padding:10px 14px;border-radius:8px;border:0;background:var(--primary);color:#fff;font-weight:700">Dir Codsi</button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" style="margin-top:28px">
+      <h2>Nala Soo Xiriir</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:12px">
+        <div class="program">
+          <h3>Xafiiska Joogtada</h3>
+          <p class="muted">Waddada Jidka 30, Galkio — somalia</p>
+          <p class="muted">Email: info@globalscience.edu | Tel: +252 906144557</p>
+        </div>
+        <div class="program">
+          <h3>Su'aalo degdeg ah</h3>
+          <p class="muted">Isticmaal foomka gelitaanka ama iimayl si aad u hesho jawaab 48 saacadood gudaheed (maalmaha shaqada).</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footgrid">
+        <div>
+          <div style="font-weight:800">Global Science University</div>
+          <div style="margin-top:8px;color:#9aa4b2">© "Global Science University" — Dhammaan xuquuqaha way xafidan yihiin.</div>
+        </div>
+        <div>
+          <div style="font-weight:700">Degmooyinka</div>
+          <ul style="list-style:none;padding:0;margin-top:8px;color:#9aa4b2">
+            <li>Barnaamijyada</li>
+            <li>Gelitaanka</li>
+            <li>Xiriirka</li>
+          </ul>
+        </div>
+        <div>
+          <div style="font-weight:700">Bulshada</div>
+          <div class="socials" style="margin-top:8px">
+            <div class="pill">FB</div>
+            <div class="pill">TW</div>
+            <div class="pill">IG</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
